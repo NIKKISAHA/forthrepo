@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact input</title>
+</head>
+<body>
+    <section>
+        <div class="ok">
+            <div class="row100">
+                <div class="col">
+                    <div class="inputbox">
+                        <div class="text">Email</div>
+                        <input type="email" required="required">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputbox">
+                        <div class="text">Password</div>
+                        <input type="password" required="required">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputbox">
+                        <div class="text">Details</div>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="submit">
+                      <button type="submit">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            background-color: rgba(56, 241, 36,0.7);
+        }
+        .ok{
+            
+            position: relative;
+            z-index: 5;
+            height: 100%;
+            width: 330px;
+            padding: 50px;
+            background: rgba(255, 255, 255, .1);
+            border-radius: 10px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, .9);
+            border: 1px solid rgba(255, 255, 255, .25);
+            border-right: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            overflow: hidden;
+            backdrop-filter: blur(25px);
+        }
+        button{
+            position: relative;
+            padding: 12px;
+            background-color: rgb(56, 241, 36);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+            border-radius: 10px;
+            font-size: 1rem;
+            color: #fff;
+        }
+       .text{
+        font-size: 1.4rem;
+        margin: 4px;
+        
+       }
+       input{
+        margin-bottom: 10px;
+        border-radius: 9px;
+        background: rgba(255, 255, 255, .8);
+        padding: 5px;
+        
+       }
+       textarea{
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, .95);
+        border-radius: 9px;
+       }
+       
+    </style>
+</body>
+</html>
